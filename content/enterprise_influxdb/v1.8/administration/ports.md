@@ -10,6 +10,8 @@ menu:
 
 ## Enabled ports
 
+![enterprise-1.x-network](/img/enterprise/enterprise-1x-network.png)
+
 ### `8086`
 The default port that runs the InfluxDB HTTP service.
 [Configure this port](/enterprise_influxdb/v1.8/administration/config-data-nodes/#bind-address-8088)
