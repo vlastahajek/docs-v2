@@ -8,6 +8,32 @@ menu:
 weight: 101
 ---
 
+## v.2.0.0-rc0 [2020-09-24]
+
+{{% warn %}}
+This release includes breaking changes. For details, see <link to upgrade guide>.
+{{% /warn %}}
+
+### Features
+
+-  Add new processing options and enhancements to influx write.
+- Redesign load data page to increase discovery and ease of use
+- Add `--active-config` flag to `influx` CLI to set config for single command
+- List buckets via the API now supports   `after (ID)` parameter as an alternative to offset.
+- Record last success and failure run times in the Task
+- Inject Task's LatestSuccess Timestamp In Flux Extern
+- Add option to dump raw query results in CLI
+- Add TSM 1.x storage options as flags
+- Add subset of InfluxQL coordinator options as flags
+- Add ability to export resources by name via the CLI
+
+### Bug fixes
+
+- Add description to auth influx command outputs.
+- Include the edge of the boundary we are observing.
+- Warn about duplicate tag names during influx write csv.
+- Do not override existing line part in group annotation.
+
 ## v2.0.0-beta.16 [2020-08-06]
 
 {{% warn %}}
